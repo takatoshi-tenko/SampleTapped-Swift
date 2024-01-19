@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE581A142B59EB0700B32AEB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE581A132B59EB0700B32AEB /* ImagePicker.swift */; };
+		EE581A162B59F2E800B32AEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE581A152B59F2E700B32AEB /* Coordinator.swift */; };
 		EE7D0E2F2B40231D001CB329 /* SampleTappedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D0E2E2B40231D001CB329 /* SampleTappedApp.swift */; };
 		EE7D0E312B40231D001CB329 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D0E302B40231D001CB329 /* ContentView.swift */; };
 		EE7D0E332B402321001CB329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7D0E322B402321001CB329 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE581A132B59EB0700B32AEB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EE581A152B59F2E700B32AEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EE7D0E2B2B40231D001CB329 /* SampleTapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTapped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D0E2E2B40231D001CB329 /* SampleTappedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTappedApp.swift; sourceTree = "<group>"; };
 		EE7D0E302B40231D001CB329 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				EE7D0E3C2B4045DD001CB329 /* Data.swift */,
 				EE7D0E2E2B40231D001CB329 /* SampleTappedApp.swift */,
 				EE7D0E302B40231D001CB329 /* ContentView.swift */,
+				EE581A132B59EB0700B32AEB /* ImagePicker.swift */,
+				EE581A152B59F2E700B32AEB /* Coordinator.swift */,
 				EE7D0E322B402321001CB329 /* Assets.xcassets */,
 				EE7D0E342B402321001CB329 /* Preview Content */,
 			);
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7D0E312B40231D001CB329 /* ContentView.swift in Sources */,
+				EE581A142B59EB0700B32AEB /* ImagePicker.swift in Sources */,
+				EE581A162B59F2E800B32AEB /* Coordinator.swift in Sources */,
 				EE7D0E3D2B4045DD001CB329 /* Data.swift in Sources */,
 				EE7D0E2F2B40231D001CB329 /* SampleTappedApp.swift in Sources */,
 			);
