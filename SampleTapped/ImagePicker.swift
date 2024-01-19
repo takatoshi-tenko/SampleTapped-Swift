@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct ImagePicker: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ImagePicker: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        return picker
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
     }
 }
 
-#Preview {
-    ImagePicker()
+struct ImagePicker_Previews: PreviewProvider {
+    static var previews: some View {
+        ImagePicker()
+    }
 }
+
