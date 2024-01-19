@@ -8,12 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var number = 0
+    @State var image:Image?
+    @State var isPicking = false
     var body: some View {
-        VStack {
-            Text("\(number)")
-            Button(action: {self.number += 1}) {
-                Text("カウント")
+        ZStack {
+            VStack {
+                VStack {
+                    Spacer()
+                    image?
+                        .resizable()
+                        .scaledToFit()
+                    Spacer()
+                }
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        self.isPicking = true
+                    }) {
+                        Image(systemName: "camera")
+                        Text("カメラ")
+                    }.padding()
+                }
+            }
+            if isPicking {
+                ImagePicker()
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .transition(.move(edge: .bottom))
+                    .animation(.easeInOut)
             }
         }
     }
